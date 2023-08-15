@@ -194,7 +194,6 @@ export default function Home() {
               name="sex"
               id="men"
               value="m"
-              checked
               className="sexC"
               onChange={handleChange}
             />
@@ -225,8 +224,8 @@ export default function Home() {
           <P>
             <p>women:{countW} </p>
             <p>men: {countM}</p>
-            <p>free hour:{workStorage.hours} </p>
-            <p> free meter: {workStorage.meter}</p>
+            <p>free hour:{summaryWork} </p>
+            <p> free meter: {summaryWork}</p>
           </P>
 
           <WorkForm>
@@ -246,7 +245,6 @@ export default function Home() {
               value={tempStorage.meter}
               onChange={handleStorage}
             />
-            *You have to add hours and meters of work
             <br />
             <AddButton
               className="addWork"

@@ -5,11 +5,12 @@ export const PageContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 10vh;
+  min-height: 100vh;
   width: 100%;
   align-items: center;
   background-color: #9593bf;
   color: white;
+  padding-top: 50px;
 `;
 
 export const EmploeesList = styled.div`
@@ -68,6 +69,7 @@ export const TabButton = styled.button`
   color: white;
   font-size: 20px;
   border-radius: 5px;
+  font-weight: bolder;
   cursor: pointer;
   background-color: #101026;
   /* zmena pri splneni podminky */
@@ -75,6 +77,8 @@ export const TabButton = styled.button`
     if (props.name === props["data-active"]) {
       return `
   background-color:rgba(255,255,255,0.3);
+  color:#371BF2
+   
   
   `;
     }
@@ -91,9 +95,12 @@ export const AddButton = styled.button`
 `;
 export const P = styled.div`
   background-color: #2d2c59;
-  padding: 10px 10px;
+  padding: 15px 15px;
   border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
 `;
 export const H3 = styled.h3`
   margin-bottom: 20px;
+  font-size: 1.5rem;
 `;
